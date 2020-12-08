@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Infinty8</string>
+    <string name="facebook_app_id">1251509791893665</string>
+    <string name="fb_login_protocol_scheme">fb1251509791893665</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="default_notification_channel_id">101</string>
+</resources>

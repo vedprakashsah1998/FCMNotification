@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:gravity="center_vertical"
+        android:background="@color/colorPrimary"
+        android:padding="14dp"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:text="Select Notification Type..."
+        android:textSize="16sp"
+        android:textColor="#ffffff"
+        android:textStyle="bold"/>
+
+    <Button
+        android:backgroundTint="#000000"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:id="@+id/rest_api"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Rest Api"
+        android:textSize="16sp"
+        android:textColor="#ffffff"
+        android:textStyle="bold"/>
+    <Button
+        android:backgroundTint="#000000"
+        android:layout_margin="20dp"
+        android:id="@+id/cloud_funcation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cloud Funcation"
+        android:textSize="16sp"
+        android:textColor="#ffffff"
+        android:textStyle="bold"/>
+
+
+</LinearLayout>

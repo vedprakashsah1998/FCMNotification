@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/lgbackground"
+    tools:context=".ui.Activity.LoginActivity">
+
+<com.google.android.material.textview.MaterialTextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/textviewName"
+    android:layout_centerHorizontal="true"
+    android:textColor="#FFFFFF"
+    android:textStyle="bold"
+    android:textSize="32sp"
+    android:text="@string/app_name"
+    android:fontFamily="@font/poppins"
+    android:layout_marginTop="22dp"/>
+
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/texttitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textviewName"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="44dp"
+        android:fontFamily="@font/poppins"
+        android:padding="8dp"
+        android:text="LOG IN"
+        android:textColor="#FFFFFF"
+        android:textSize="32sp"
+        android:textStyle="bold" />
+    <ProgressBar
+        android:visibility="gone"
+        android:id="@+id/progress_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="?android:progressBarStyleHorizontal"
+        android:indeterminate="true"/>
+
+    <EditText
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/texttitle"
+        android:layout_centerHorizontal="true"
+        android:hint="Email"
+        android:layout_marginTop="22dp"
+        android:textColorHint="#FFFFFF"
+        android:id="@+id/email"
+        android:textColor="#FFFFFF"
+        android:inputType="textEmailAddress"
+        android:textSize="22sp"
+        android:padding="8dp"
+        android:background="@drawable/edit_text"
+        android:drawablePadding="8dp"
+        android:drawableStart="@drawable/ic_email_24"
+        />
+
+    <EditText
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/email"
+        android:layout_centerHorizontal="true"
+        android:hint="Password"
+        android:layout_marginTop="22dp"
+        android:textColorHint="#FFFFFF"
+        android:textColor="#FFFFFF"
+        android:inputType="textPassword"
+        android:textSize="22sp"
+        android:padding="8dp"
+        android:id="@+id/password"
+        android:background="@drawable/edit_text"
+        android:drawablePadding="8dp"
+        android:drawableStart="@drawable/ic_lock_24"
+        />
+
+<com.google.android.material.button.MaterialButton
+    android:layout_width="250dp"
+    android:layout_height="70dp"
+    android:padding="4dp"
+    android:layout_below="@+id/password"
+    android:layout_marginTop="44dp"
+    android:layout_centerHorizontal="true"
+    app:cornerRadius="12dp"
+    app:backgroundTint="#B3000000"
+    android:text="LOGIN"
+    android:id="@+id/loginButton"
+    android:textSize="22sp"
+    android:textAlignment="center"
+    app:strokeWidth="2dp"
+    app:strokeColor="#FFFFFF"
+    app:elevation="12dp"
+    />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/loginButton"
+        android:layout_marginTop="44dp"
+        android:text="don't have account?"
+        android:textColor="#FFF"
+        android:id="@+id/normalText"
+        android:layout_centerHorizontal="true"
+        android:textSize="16sp"
+        />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/loginButton"
+        android:layout_marginTop="44dp"
+        android:layout_toEndOf="@+id/normalText"
+        android:text="Register"
+        android:textSize="16sp"
+        android:id="@+id/registerTextClick"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:layout_marginStart="4dp"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:padding="4dp"
+        android:layout_alignParentBottom="true"
+        android:elevation="8dp"
+        android:layout_marginStart="22dp"
+        android:text="Google"
+        android:layout_marginBottom="22dp"
+        android:textSize="16sp"
+        android:id="@+id/googleSignin"
+        android:textColor="#000000"
+        android:textAllCaps="false"
+        android:paddingStart="22dp"
+        android:drawableStart="@drawable/ic_google"
+        android:background="@drawable/button_bg"
+        />
+
+
+<com.facebook.login.widget.LoginButton
+    android:layout_width="150dp"
+    android:id="@+id/login_button_fb"
+    android:padding="4dp"
+    android:paddingStart="22dp"
+    android:layout_alignParentBottom="true"
+    android:elevation="8dp"
+    android:layout_marginEnd="22dp"
+    android:layout_alignParentEnd="true"
+    android:layout_marginBottom="22dp"
+    android:visibility="gone"
+    android:layout_height="50dp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:padding="4dp"
+        android:paddingStart="22dp"
+        android:layout_alignParentBottom="true"
+        android:elevation="8dp"
+        android:id="@+id/fb_custome_button"
+        android:layout_marginEnd="22dp"
+        android:layout_alignParentEnd="true"
+        android:text="Facebook"
+        android:layout_marginBottom="22dp"
+        android:textSize="16sp"
+        android:textColor="#FFFFFF"
+        android:textAllCaps="false"
+        android:drawableStart="@drawable/ic_facebook_logo"
+        android:drawablePadding="8dp"
+        android:background="@drawable/fb_bg"
+        android:textAlignment="center"
+        />
+
+
+</RelativeLayout>

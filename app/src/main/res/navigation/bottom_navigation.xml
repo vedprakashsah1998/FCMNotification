@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bottom_navigation"
+    app:startDestination="@id/fragment_all_user">
+    <fragment
+        android:id="@+id/fragment_all_user"
+        android:name="com.infinity8.fcmnotificationpractice.ui.Fragment.AllUserFragment"
+        android:label="All User Fragment"
+        tools:layout="@layout/fragment_all_user" />
+    <fragment
+        android:id="@+id/topic_fragment"
+        android:name="com.infinity8.fcmnotificationpractice.ui.Fragment.TopicFragment"
+        android:label="Topic Fragment"
+        tools:layout="@layout/fragment_topic" />
+    <fragment
+        android:id="@+id/notification"
+        android:name="com.infinity8.fcmnotificationpractice.ui.Fragment.Notification"
+        android:label="Notification Fragment"
+        tools:layout="@layout/fragment_notification" />
+    <fragment
+        android:id="@+id/profile_fragment"
+        android:name="com.infinity8.fcmnotificationpractice.ui.Fragment.ProfileFragment"
+        android:label="Profile Fragment"
+        tools:layout="@layout/fragment_profile" />
+
+</navigation>
